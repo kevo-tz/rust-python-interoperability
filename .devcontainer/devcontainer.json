@@ -1,0 +1,16 @@
+{
+    "name": "Testing Workshop",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer",
+                "serayuzgur.crates",
+                "redhat.vscode-yaml",
+                "usernamehw.errorlens"
+            ]
+        }
+    }
+}
