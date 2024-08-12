@@ -1,5 +1,5 @@
 {
-    "name": "Testing Workshop",
+    "name": "Rust Python",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
@@ -7,9 +7,10 @@
         "vscode": {
             "extensions": [
                 "rust-lang.rust-analyzer",
-                "serayuzgur.crates",
                 "redhat.vscode-yaml",
-                "usernamehw.errorlens"
+                "usernamehw.errorlens",
+                "fill-labs.dependi",
+                "ms-python.python"
             ]
         }
     }

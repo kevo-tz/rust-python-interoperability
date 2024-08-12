@@ -1,4 +1,4 @@
-version: '3.8'
+name: rust_python_app
 
 services:
   app:
