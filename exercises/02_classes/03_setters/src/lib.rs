@@ -3,7 +3,9 @@ use pyo3::prelude::*;
 
 #[pyclass]
 struct Item {
+    #[pyo3(set)]
     name: String,
+    #[pyo3(set)]
     price: u64,
     #[pyo3(get)]
     n_visits: u64,
@@ -19,7 +21,16 @@ impl Item {
             n_visits: 0,
         }
     }
+    #[getter]
+    fn get_name(&mut self){
+        self.n_visits = self.n_visits + 1;
+    }
+    #[getter]
+    fn get_price(&mut self){
+        self.n_visits = self.n_visits + 1;
+    }
 }
+
 
 #[pymodule]
 fn setters(m: &Bound<'_, PyModule>) -> PyResult<()> {
