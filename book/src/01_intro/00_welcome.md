@@ -27,7 +27,7 @@ also find solutions to all exercises in the
 To follow this course, you must install:
 
 - [Rust](https://www.rust-lang.org/tools/install)
-- [`rye`](https://rye.astral.sh/), a Python package manager
+- [`uv`](https://docs.astral.sh/uv/), a Python package manager
 
 If Rust is already installed on your machine, make sure to update it to the latest version:
 
@@ -41,7 +41,7 @@ These commands should successfully run on your machine:
 
 ```bash
 cargo --version
-rye --version
+uv --version
 ```
 
 Don't start the course until you have these tools installed and working.
@@ -78,15 +78,10 @@ automatically verify your solution.
 
 ### `wr`, the workshop runner
 
-To verify your solutions, we've provided a tool that will guide you through the course.
-It is the `wr` CLI (short for "workshop runner").
-Install it with:
+To verify your solutions, we've also provided a tool to guide you through the course: the `wr` CLI, short for "workshop runner".
+Install `wr` by following the instructions on [its website](https://mainmatter.github.io/rust-workshop-runner/).
 
-```bash
-cargo install --locked workshop-runner
-```
-
-In a new terminal, navigate back to the top-level folder of the repository.
+Once you have `wr` installed, open a new terminal and navigate to the top-level folder of the repository.
 Run the `wr` command to start the course:
 
 ```bash

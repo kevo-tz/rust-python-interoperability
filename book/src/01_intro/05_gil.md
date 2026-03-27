@@ -1,6 +1,6 @@
 # Global Interpreter Lock (GIL)
 
-If you go back to [`pyo3`'s documentation on arguments](https://pyo3.rs/v0.22.0/conversions/tables#argument-types),
+If you go back to [`pyo3`'s documentation on arguments](https://pyo3.rs/v0.23.3/conversions/tables#argument-types),
 you'll find a table column listing so called "Python-native" types.
 What are they, and why would you use them?
 
@@ -34,8 +34,8 @@ error[E0277]: the trait bound `&PyList: PyFunctionArgument<'_, '_>` is not satis
    --> src/lib.rs:7:28
     |
 7   | fn print_number_list(list: &PyList) {
-    |                            ^ 
-    |        the trait `PyClass` is not implemented for `&PyList`, 
+    |                            ^
+    |        the trait `PyClass` is not implemented for `&PyList`,
     |        which is required by `&PyList: PyFunctionArgument<'_, '_>`
     |
     = help: the following other types implement trait `PyFunctionArgument<'a, 'py>`:
@@ -134,10 +134,10 @@ when we're interacting with the Python object during the conversion.
 
 ## References
 
-- [`FromPyObject`](https://docs.rs/pyo3/0.22.1/pyo3/conversion/trait.FromPyObject.html)
-- [`Python<'py>`](https://docs.rs/pyo3/0.22.1/pyo3/marker/struct.Python.html)
+- [`FromPyObject`](https://docs.rs/pyo3/0.26.0/pyo3/conversion/trait.FromPyObject.html)
+- [`Python<'py>`](https://docs.rs/pyo3/0.26.0/pyo3/marker/struct.Python.html)
 - [Global Interpreter Lock](https://docs.python.org/3/c-api/init.html#thread-state-and-the-global-interpreter-lock)
-- [Official guidance on Python-native vs Rust-native types](https://pyo3.rs/v0.22.0/conversions/tables#using-rust-library-types-vs-python-native-types)
+- [Official guidance on Python-native vs Rust-native types](https://pyo3.rs/v0.23.3/conversions/tables#using-rust-library-types-vs-python-native-types)
 
 ## Footnotes
 
